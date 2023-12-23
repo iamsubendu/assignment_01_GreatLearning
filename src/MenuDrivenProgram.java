@@ -74,6 +74,7 @@ public class MenuDrivenProgram {
             } else {
                 System.out.println("The number is not a palindrome.");
             }
+            scanner.close();
         } catch (NumberFormatException e) {
             System.out.println("Invalid input. Please enter a valid number.");
         }
@@ -90,6 +91,7 @@ public class MenuDrivenProgram {
             }
             System.out.println();
         }
+        scanner.close();
     }
 
     private static void checkPrime() {
@@ -115,6 +117,7 @@ public class MenuDrivenProgram {
         } else {
             System.out.println("The number is not prime.");
         }
+        scanner.close();
     }
 
     private static void printFibonacciSeries() {
@@ -136,5 +139,6 @@ public class MenuDrivenProgram {
         }
 
         System.out.println();
+        scanner.close();
     }
 }
